@@ -48,10 +48,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-full">
       <head>
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen`}>
         {children}
         {<MyNav/>}
       </body>

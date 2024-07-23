@@ -111,8 +111,8 @@ export default function Page() {
 
   return (
 
-    <main className="flex min-h-screen items-center flex-col justify-between p-24 bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
-      <Floating/>
+    <main className="flex min-h-full items-center flex-col justify-between p-24 bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
+      {/* <Floating/> */}
       <div>
         <div className="grid grid-cols-2 grid-rows-4 w-9/10">
 
