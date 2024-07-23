@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   description: "Software engineer based in Boston",
   icons: 
     {
-    icon: '/cat.svg'
+    icon: './cat.svg'
     },
 };
 
