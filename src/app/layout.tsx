@@ -37,9 +37,14 @@ export const metadata: Metadata = {
   title: "Julian Spring",
   description: "Software engineer based in Boston",
   icons: 
-    {
+  {
     icon: './cat.svg'
-    },
+  },
+  viewport: 
+  {
+    width: "device-width",
+    initialScale: 1
+  }
 };
 
 export default function RootLayout({
@@ -52,8 +57,8 @@ export default function RootLayout({
       <head>
       </head>
       <body className={`${inter.className} min-h-screen`}>
+        
         {children}
-        {<MyNav/>}
       </body>
     </html>
   );

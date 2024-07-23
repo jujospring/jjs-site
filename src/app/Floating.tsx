@@ -29,8 +29,8 @@ const Floating: React.FC = () => {
         img.className = styles.floatingImage;
   
         //within the container width
-        const containerWidth = container.clientWidth;
-        img.style.left = `${(containerWidth/Unowns.length * idx) + 150}px`;
+        const containerWidth = container.clientWidth - 40;
+        img.style.left = `${(containerWidth/Unowns.length * idx)}px`;
         img.style.animationDelay = `${0}s`; //stagger animations
         container.appendChild(img); //add unown to web container
 

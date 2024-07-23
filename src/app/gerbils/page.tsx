@@ -9,7 +9,7 @@ export default function Page() {
       <Floating/>
       {/* BULLSHIT ENDS HERE -- JUST KIDDING */}
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-        <div className=" mx-auto overflow-hidden rounded-md p-8 pt-16 pb-8 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"> 
+        <div className=" ml-32 overflow-hidden rounded-md p-8 pt-16 pb-8 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"> 
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-">
               <Image

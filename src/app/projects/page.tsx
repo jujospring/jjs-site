@@ -94,10 +94,10 @@ import Floating from "../Floating";
 
 export default function Page() {
 
-  const projectCardStyle = "mx-40 my-20 w-4/5 overflow-hidden rounded-md p-4 py-24 sm:py-32 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"
+  const projectCardStyle = "mr-auto my-8 min-h-4/5 w-4/5 overflow-hidden rounded-md p-4 py-16 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"
   const projectCardButton = "flex mx-auto text-black hover:font-bold bg-gradient-to-b from-lime-500 to-green-500 hover:bg-gradient-to-br hover:from-lime-600 hover:to-green-600"
-  const projectCardTitle = "text-6xl pb-6 text-center font-bold tracking-tight bg-gradient-to-br from-lime-400 to-green-400 bg-clip-text text-transparent"
-  const projectCardDesc = "text-center p-10 text-xl bg-gradient-to-br from-green-600 to-green-800 bg-clip-text text-transparent"
+  const projectCardTitle = "text-4xl pb-6 text-center font-bold tracking-tight bg-gradient-to-br from-lime-400 to-green-400 bg-clip-text text-transparent"
+  const projectCardDesc = "text-center p-8 text-xl bg-gradient-to-br from-green-600 to-green-800 bg-clip-text text-transparent"
 
 
   useEffect(() => {
@@ -111,24 +111,36 @@ export default function Page() {
 
   return (
 
-    <main className="flex min-h-full items-center flex-col justify-between p-24 bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
-      {/* <Floating/> */}
+    <main className="flex ml-32 min-h-screen items-center flex-col justify-between p-8 bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
+      <Floating/>
       <div>
-        <div className="grid grid-cols-2 grid-rows-4 w-9/10">
+        <MyNav />
+        <div className="grid grid-cols-2 grid-rows-2 w-4/5 ml-40">
+          <div className="grid-row-start-1 grid-col-start-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            <div className={projectCardStyle}>
+              <h3 className={projectCardTitle}>RSS Aggregator</h3>
+              <p className={projectCardDesc}>Live RSS markdown data aggregator in Golang</p>
+              <Link className="" href="https://github.com/jujospring/rss_aggregator">
+                <Button className={projectCardButton}>
+                  <BrainCircuit className="mr-2 h-4 w-4" /> View Project
+                </Button>
+              </Link>
+            </div>  
+          </div>
 
-        <div className="grid-row-start-1 grid-col-start-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-          <div className={projectCardStyle}>
-            <h3 className={projectCardTitle}>RSS Aggregator</h3>
-            <p className={projectCardDesc}>Live RSS markdown data aggregator in Golang</p>
-            <Link className="" href="https://github.com/jujospring/rss_aggregator">
-              <Button className={projectCardButton}>
-                <BrainCircuit className="mr-2 h-4 w-4" /> View Project
-              </Button>
-            </Link>
-          </div>  
-        </div>
+          <div className="grid-row-start-1 grid-col-start-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            <div className={projectCardStyle}>
+              <h3 className={projectCardTitle}>Kafka Producer</h3>
+              <p className={projectCardDesc}>Apache Kafka message producer in Java and Docker</p>
+              <Link href="https://github.com/jujospring/kafka_producer">
+                <Button className={projectCardButton}>
+                  <BrainCircuit className="mr-2 h-4 w-4" /> View Project
+                </Button>
+              </Link>
+            </div>  
+          </div>
 
-        <div className="grid-row-start-1 grid-col-start-2 mx-auto">
+        {/* <div className="grid-row-start-1 grid-col-start-2 mx-auto">
 
         </div>
 
@@ -147,39 +159,51 @@ export default function Page() {
             </Button>
           </Link>
           </div>  
-        </div>
+        </div> */}
 
-        <div className="grid-row-start-3 grid-col-start-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-          <div className={projectCardStyle}>
-          <h3 className={projectCardTitle}>Kafka Consumer</h3>
-          <p className={projectCardDesc}>Apache Kafka message consumer using Java and Docker</p>
-          <Link href="https://github.com/jujospring/kafka_consumer">
-            <Button className={projectCardButton}>
-              <BrainCircuit className="mr-2 h-4 w-4" /> View Project
-            </Button>
-          </Link>
-          </div>  
-        </div>
+          <div className="grid-row-start-2 grid-col-start-1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            <div className={projectCardStyle}>
+              <h3 className={projectCardTitle}>Kafka Consumer</h3>
+              <p className={projectCardDesc}>Apache Kafka message consumer in Java and Docker</p>
+              <Link href="https://github.com/jujospring/kafka_consumer">
+                <Button className={projectCardButton}>
+                  <BrainCircuit className="mr-2 h-4 w-4" /> View Project
+                </Button>
+              </Link>
+            </div>  
+          </div>
 
-        <div className="grid-row-start-3 grid-col-start-2 mx-auto">
+          {/* <div className="grid-row-start-3 grid-col-start-2 mx-auto">
 
-        </div>
+          </div>
 
-        <div className="grid-row-start-4 grid-col-start-1 mx-auto">
+          <div className="grid-row-start-4 grid-col-start-1 mx-auto">
 
-        </div>
+          </div>
 
-        <div className="grid-row-start-4 grid-col-start-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-          <div className={projectCardStyle}>
-          <h3 className={projectCardTitle}>NextJS Customer Dashboard</h3>
-          <p className={projectCardDesc}>Dashboard for example customer data from NextJS tutorial</p>
-          <Link href="https://github.com/jujospring/learn-nextjs">
-            <Button className={projectCardButton}>
-              <BrainCircuit className="mr-2 h-4 w-4" /> View Project
-            </Button>
-          </Link>
-          </div>  
-        </div>
+          <div className="grid-row-start-4 grid-col-start-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            <div className={projectCardStyle}>
+              <h3 className={projectCardTitle}>NextJS Customer Dashboard</h3>
+              <p className={projectCardDesc}>Dashboard for example customer data from NextJS tutorial</p>
+              <Link href="https://github.com/jujospring/learn-nextjs">
+                <Button className={projectCardButton}>
+                  <BrainCircuit className="mr-2 h-4 w-4" /> View Project
+                </Button>
+              </Link>
+            </div>  
+          </div> */}
+
+          <div className="grid-row-start-2 grid-col-start-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+            <div className={projectCardStyle}>
+              <h3 className={projectCardTitle}>NextJS Dashboard</h3>
+              <p className={projectCardDesc}>Dashboard for example customer data from NextJS tutorial</p>
+              <Link href="https://github.com/jujospring/learn-nextjs">
+                <Button className={projectCardButton}>
+                  <BrainCircuit className="mr-2 h-4 w-4" /> View Project
+                </Button>
+              </Link>
+            </div>  
+          </div>
 
         </div>
       </div>
