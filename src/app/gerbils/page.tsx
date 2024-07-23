@@ -13,7 +13,7 @@ export default function Page() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-">
               <Image
-                src={'/gerbils.png'}
+                src={'./gerbils.png'}
                 alt=""
                 width="1000"
                 height="500"
