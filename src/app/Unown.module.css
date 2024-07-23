@@ -1,0 +1,34 @@
+.imageContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden; /* Hide overflow to prevent images from spilling out */
+  height: 100%; /* Ensure container covers the viewport height */
+}
+
+.floatingImage {
+  position: absolute;
+  bottom: -20vh;
+  animation: floatUp 5s linear infinite, fadeOut 5s linear forwards;
+  opacity: 1;
+  width: 80px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
