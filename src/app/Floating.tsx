@@ -4,18 +4,18 @@ import styles from './Unown.module.css';
 //constant list of unowns
 //currently set up for unowns of each index to always generate in the same 'lane'
 const Unowns = [
-  '/unowns/j-clear.png',
-  '/unowns/u-clear.png',
-  '/unowns/l-clear.png',
-  '/unowns/i-clear.png',
-  '/unowns/a-clear.png',
-  '/unowns/n-clear.png',
-  '/unowns/s-clear.png',
-  '/unowns/p-clear.png',
-  '/unowns/r-clear.png',
-  '/unowns/i-clear.png',
-  '/unowns/n-clear.png',
-  '/unowns/g-clear.png',
+  './unowns/j-clear.png',
+  './unowns/u-clear.png',
+  './unowns/l-clear.png',
+  './unowns/i-clear.png',
+  './unowns/a-clear.png',
+  './unowns/n-clear.png',
+  './unowns/s-clear.png',
+  './unowns/p-clear.png',
+  './unowns/r-clear.png',
+  './unowns/i-clear.png',
+  './unowns/n-clear.png',
+  './unowns/g-clear.png',
 ]
 
 const Floating: React.FC = () => {
