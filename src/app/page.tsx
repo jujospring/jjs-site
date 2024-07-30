@@ -109,22 +109,23 @@ export default function Home() {
   }, []);
   
   return (
-    <main className="flex min-h-screen items-center flex-col justify-between p-24 bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
+    <main className="flex min-h-screen items-center flex-col justify-between bg-[url('../../public/crumpled-paper.jpg')] bg-fixed bg-cover">
+      <MyNav/>
       <Floating/>
       {/* BULLSHIT ENDS HERE -- JUST KIDDING */}
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
-        <div className="mb-20 ml-32 overflow-hidden rounded-md p-4 py-24 sm:py-32 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"> 
+        <div className="mb-20 mx-auto w-5/6 overflow-hidden rounded-lg p-4 py-8 sm:py-32 backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30"> 
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-6xl pb-6 text-center font-bold tracking-tight bg-gradient-to-br from-lime-400 to-green-400 bg-clip-text text-transparent">Julian Spring</h2>
-              <p className="mt-6 text-2xl text-center leading-8 bg-gradient-to-b from-lime-500 to-green-500 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-6xl pb-6 text-center font-bold tracking-tight bg-gradient-to-br from-lime-400 to-green-400 bg-clip-text text-transparent">Julian Spring</h2>
+              <p className="md:mt-6 text-xl md:text-2xl text-center leading-8 bg-gradient-to-b from-lime-500 to-green-500 bg-clip-text text-transparent">
                 Software engineer working in Boston on front-end and back-end projects using Go, Java, and Javascript/Typescript languages, and React, NextJS, and Apache Kafka frameworks. Reach me at: julian@gohyper.ai
               </p>
             </div>
           </div> 
         </div>
       </div>
-      <footer className="ml-32 overflow-hidden rounded-md backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30">
+      <footer className="mb-32 overflow-hidden rounded-md backdrop-blur-sm transition hover:backdrop-blur duration-500 bg-white/30">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="items-center mx-auto mt-auto sm:justify-center md:justify-center lg:justify-center">
             <a href="https://github.com/jujospring" className="text-green-500 hover:text-green-600 dark:hover:text-white ms-5">

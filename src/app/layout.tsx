@@ -40,11 +40,11 @@ export const metadata: Metadata = {
   {
     icon: './cat.svg'
   },
-  viewport: 
-  {
-    width: "device-width",
-    initialScale: 1
-  }
+  // viewport: 
+  // {
+  //   width: "device-width",
+  //   initialScale: 1
+  // }
 };
 
 export default function RootLayout({
@@ -55,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-full">
       <head>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${inter.className} min-h-screen`}>
         

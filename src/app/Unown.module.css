@@ -1,10 +1,13 @@
 .imageContainer {
-  position: absolute;
+  position: fixed;
   bottom: 0%;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   overflow: hidden; /* Hide overflow to prevent images from spilling out */
   height: 100vh; /* Ensure container covers the viewport height */
+  /* margin-left: 8.3333%; */
+  /* margin-left: 8rem; */
+  /* object-fit: cover; */
 }
 
 .floatingImage {
@@ -12,7 +15,7 @@
   bottom: -20vh;
   animation: floatUp 5s linear infinite, fadeOut 5s linear forwards;
   opacity: 1;
-  width: 80px;
+  width: 48px;
 }
 
 @keyframes floatUp {
